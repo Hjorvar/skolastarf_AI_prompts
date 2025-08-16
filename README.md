@@ -17,6 +17,9 @@ Velkomin(n) í skipanasafnið okkar! Hér söfnum við saman hagnýtum "prompts"
 * [Grunnskóli](./Grunnskoli/README.md)
 * [Framhaldsskóli](./Framhaldsskoli/README.md)
 
+### 📝 Próf
+* [Krossapróf](./Krossapróf/README.md)
+
 ### 🛠️ Eftir verkefni
 * [Hugmyndavinna & undirbúningur](./Verkefni/Hugmyndavinna.md)
 * [Námsmat & endurgjöf](./Verkefni/Namsmat.md)
