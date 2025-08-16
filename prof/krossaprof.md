@@ -1,6 +1,6 @@
 # Safn sniðmáta fyrir krossapróf (Multiple-Choice próf)
 
-## Stutt yfirlit
+## Stutt yfirvirlit
 
 Hér er safn af *prompt*-sniðmátum sem auðvelda gerð krossaprófa með aðstoð stórra mállíkana (LLM). Sniðmátin eru hönnuð með það í huga að prófin séu vönduð og lesendavæn, hvort sem notast er við almenna spjallgervigreind (t.d. ChatGPT eða Google Gemini) eða sérhæfðari umhverfi eins og Google NotebookLM með aðgang að kennsluefni.
 
@@ -17,87 +17,110 @@ Við hönnun spurninganna í þessum sniðmátum er stuðst við viðurkenndar a
       - Forðast er villandi vísbendingar, skarast ekki innbyrðis og fela ekki í sér tvíræðni.
       - Valmöguleikar eins og „Allt ofantalið“ eða „Ekkert af ofantöldu“ eru ekki notaðir.
 
+### Leiðbeiningar um „Gerð spurninga“
+
+Breyturnar `GERÐ SPURNINGA` í sniðmátunum hér á eftir gefa þér mikil völd til að stýra vitrænu þrepi prófsins. Hér eru nokkrar hugmyndir að því hvað þú getur skrifað og hvaða tegund af spurningum það býr til:
+
+  - **`"Staðreyndir og skilgreiningar"`**
+
+      - **Hvað það þýðir:** Prófar grunnþekkingu og minni. Gervigreindin mun einbeita sér að spurningum eins og *„Hvað er...?“*, *„Hvenær gerðist...?“*, *„Nefndu...“*.
+      - **Hvenær á að nota:** Gott til að kanna hvort nemendur hafi lesið efnið eða lært lykilhugtök.
+
+  - **`"Skilningur og samanburður"`**
+
+      - **Hvað það þýðir:** Prófar hvort nemendur geti útskýrt hugtök með eigin orðum eða borið saman ólíkar hugmyndir. Býr til spurningar eins og *„Hver er meginmunurinn á X og Y?“*, *„Hvað af eftirfarandi lýsir best...?“*.
+      - **Hvenær á að nota:** Þegar þú vilt meta dýpri skilning en bara utanbókarlærdóm.
+
+  - **`"Hagnýting og dæmi"`**
+
+      - **Hvað það þýðir:** Prófar hvort nemendur geti notað þekkingu sína í nýju samhengi eða til að leysa einföld vandamál. Býr til spurningar eins og *„Hvað myndi líklega gerast ef...?“*, *„Hvaða dæmi passar best við...?“*.
+      - **Hvenær á að nota:** Til að meta færni til hagnýtingar og yfirfærslu á þekkingu.
+
+  - **`"Greining og mat"`**
+
+      - **Hvað það þýðir:** Prófar æðri þrep hugsunar, svo sem getu til að greina orsakir og afleiðingar eða leggja mat á aðstæður. Býr til spurningar eins og *„Hver var mikilvægasta orsök...?“*, *„Hvaða afleiðingar hafði...?“*.
+      - **Hvenær á að nota:** Fyrir krefjandi próf sem reyna á gagnrýna hugsun.
+
+  - **`"Góð blanda af öllu"`**
+
+      - **Hvað það þýðir:** Þetta er góður sjálfgefinn valkostur sem biður gervigreindina um að dreifa spurningunum jafnt yfir mismunandi erfiðleikastig.
+      - **Hvenær á að nota:** Fyrir hefðbundin kaflapróf eða þegar þú vilt fjölbreytt próf án þess að tilgreina nánar.
+
 -----
 
 ## Prompt 1: Sveigjanlegt sniðmát fyrir almenna gervigreind
 
-Þetta sniðmát er hannað til að vera sveigjanlegt og einfalt í notkun. Efst í því er kafli fyrir **„Stillanlegar breytur“** þar sem notandinn getur auðveldlega skilgreint námsgrein, skólastig og efni prófsins. Með því að breyta aðeins upplýsingum á þessum eina stað er hægt að útbúa próf fyrir hvaða námsgrein sem er.
-
-Sniðmátið biður einnig um ítarlegan og rökstuddan svarlykil sem gerir prófið að hagnýtu kennslutæki fyrir bæði kennara og nemendur.
+Þetta sniðmát er fyrir almenn spjalllíkön (eins og ChatGPT, Gemini, o.fl.) sem hafa **ekki** aðgang að kennslugögnum heldur byggja á almennri þekkingu sinni. Sniðmátið er hannað til að vera sveigjanlegt með stillanlegum breytum sem leyfa notandanum að fínstilla prófið nákvæmlega.
 
 ```
 # ------------------
-# STILLANLEGAR BREYTUR (breyttu aðeins textanum hér)
+# STILLANLEGAR BREYTUR (fylltu út það sem við á)
 # ------------------
 
-**NÁMSGREIN:** [Hér setur þú inn námsgrein, t.d. Saga, Stærðfræði, Líffræði]
-**SKÓLASTIG:** [Hér setur þú inn skólastig, t.d. Framhaldsskólastigi, Grunnskólastigi]
-**FJÖLDI SPURNINGA:** [Hér setur þú inn tölu, t.d. 10]
-**NÁNARI LÝSING Á EFNISÞÁTTUM:** [Lýstu hér efninu sem prófið á að ná yfir.]
+# Grunnstillingar (nauðsynlegt)
+**NÁMSGREIN:** [Tilgreindu námsgrein, t.d. Saga, Líffræði]
+**SKÓLASTIG:** [Tilgreindu skólastig, t.d. Framhaldsskólastigi]
+**EFNISÞÆTTIR:** [Lýstu hér efninu sem prófið á að ná yfir, t.d. "Franska byltingin", "Erfðafræði og frumulíffræði"]
+**FJÖLDI SPURNINGA:** [Hér setur þú inn tölu.]
+
+# Fínstillingar (valkvætt, en mjög öflugt)
+**ÁHERSLUATRIÐI:** [Lykilhugtök eða efnisþætti sem eiga að vera í forgrunni.]
+**GERÐ SPURNINGA:** [Tilgreindu hvers konar spurningar þú vilt, sjá leiðbeiningar hér að ofan.]
 
 # ------------------
 # FÖST SKIPUN (ekki breyta textanum hér fyrir neðan)
 # ------------------
 
-Ég vil að þú látir eins og þú sért kennari í **[NÁMSGREIN]** á **[SKÓLASTIG]**. Útbúðu krossapróf (fjölvalsspurningar) úr efni námskeiðs í **[NÁMSGREIN]**.
+Láttu eins og þú sért sérfróður kennari í **[NÁMSGREIN]** á **[SKÓLASTIG]**. Verkefni þitt er að útbúa hágæða krossapróf sem byggir á almennri þekkingu um **[EFNISÞÆTTIR]**. Leggðu sérstaka áherslu á **[ÁHERSLUATRIÐI]**, ef þau eru tilgreind.
 
-- **Fjöldi spurninga:** **[FJÖLDI SPURNINGA]** spurningar (með fjórum svarmöguleikum hver).
-- **Tungumál:** Spurningarnar og svarmöguleikarnir skulu vera á íslensku.
-- **Innihald prófs:** **[NÁNARI LÝSING Á EFNISÞÁTTUM]**
-- **Gæði spurninga:** Orðaðu hverja spurningu skýrt og forðastu tvíræðni eða flókin orðalag. Notaðu EKKI neikvæða spurningauppsetningu. Hver spurning skal prófa mikilvæga staðreynd eða hugtak úr kennsluefninu.
-- **Svarmöguleikar:** Fyrir hverja spurningu skal einn svarmöguleiki vera réttur og hinir þrír rangir. Gerðu ranga svarmöguleika sannfærandi og fjölbreytta, en þannig að vel að sér nemandi geti greint rétt svar. Forðastu svarmöguleika eins og "Allt ofantalið" eða "Ekkert af ofantöldu". Gættu þess að svarmöguleikarnir séu á sömu formi (svipaðir að lengd og gerð).
-- **Útlit úttaks:** Settu spurningarnar upp á snyrtilegan hátt með númeruðum lista (1., 2., 3, ...). Tilgreindu svarmöguleika við hverja spurningu með bókstaf (a, b, c, d).
-
-**Í svarlyklinum skaltu birta rétt svar fyrir hverja spurningu. Fyrir hvert svar skaltu einnig skrifa stutta útskýringu sem rökstyður hvers vegna svarið er rétt og gefur stutta skýringu á því hvers vegna hinir svarmöguleikarnir eru rangir.**
-```
-
-### Dæmi um úttak (með rökstuddum svarlykli)
-
-*Hér er dæmi um hvernig svarlykillinn myndi líta út fyrir eina spurningu:*
-
-**Svarlykill**
-
-**1. Svar: b**
-
-  * **Rökstuðningur:** Hvatberar eru þekktir sem „orkuver“ frumunnar vegna þess að þeir framkvæma frumuöndun. Í því ferli er glúkósa og súrefni breytt í ATP, sem er aðalorkugjafi frumunnar.
-  * **Af hverju hitt er rangt:**
-      * **a) Leysikorn:** Eru „ruslaverksmiðjur“ frumunnar sem brjóta niður úrgangsefni.
-      * **c) Netkorn (ríbósóm):** Sjá um próteinmyndun.
-      * **d) Frymisnet:** Er flutningskerfi innan frumunnar.
-
-### Aðlögun og notkun
-
-Að nota sniðmátið er einfalt. Fylltu aðeins út upplýsingarnar í **STILLANLEGAR BREYTUR** hlutanum efst og afritaðu síðan allt sniðmátið (bæði breytur og föstu skipun) yfir í spjalllíkanið.
-
-**Dæmi fyrir sagnfræðipróf:**
-
-```
-**NÁMSGREIN:** Saga
-**SKÓLASTIG:** Framhaldsskólastigi
-**FJÖLDI SPURNINGA:** 5
-**NÁNARI LÝSING Á EFNISÞÁTTUM:** Spurningarnar eiga að fjalla um lykilatriði í seinni heimsstyrjöldinni, með áherslu á helstu orsakir, viðsnúninga og afleiðingar stríðsins.
+- **Verkefnalýsing:** Búðu til **[FJÖLDI SPURNINGA]** fjölvalsspurningar. Mótaðu spurningarnar í samræmi við þá gerð sem er skilgreind í **[GERÐ SPURNINGA]** (ef tilgreint).
+- **Gæðakröfur:** Spurningar skulu vera skýrar, byggja á jákvæðri setningu og prófa raunverulegan skilning. Rangir svarmöguleikar skulu vera trúverðugir og byggja á algengum misskilningi.
+- **Framsetning og útlit:** Settu prófið upp á læsilegan hátt. Fylgdu þessari uppbyggingu nákvæmlega fyrir hverja spurningu:
+  1. [Texti spurningar]
+     a) [Texti svarmöguleika]
+     b) [Texti svarmöguleika]
+     c) [Texti svarmöguleika]
+     d) [Texti svarmöguleika]
+- **Svarlykill:** Skilaðu ítarlegum svarlykli með rökstuðningi fyrir réttu svari og útskýringu á því af hverju hin svörin eru röng.
 ```
 
 -----
 
-## Prompt 2: NotebookLM (með aðgang að námsáætlun/kennsluefni)
+## Prompt 2: „Sérfræðingaútgáfa“ fyrir NotebookLM
 
-Þetta sniðmát er sérsniðið fyrir umhverfi þar sem gervigreindin hefur aðgang að tilteknum gögnum, t.d. Google NotebookLM. Markmiðið er að spurningarnar taki mið af því efni sem raunverulega hefur verið kennt. Sniðmátið leggur ríka áherslu á að **nota eingöngu upplýsingar úr fyrirliggjandi kennslugögnum** til að forðast að spyrja úr efni sem nemendur hafa ekki kynnt sér.
+Þetta sniðmát er sérhannað fyrir umhverfi eins og NotebookLM þar sem gervigreindin hefur **aðgang að þínum eigin kennslugögnum** (t.d. kennslubókum, glósum, námsáætlunum). Sniðmátið nýtir þennan styrk til fulls með því að leyfa þér að afmarka nákvæmlega úr hvaða köflum eða vikum efnið skal sótt.
 
-> Gefið er að hér sé til staðar námsáætlun og kennsluefni fyrir áfanga í **líffræði** á framhaldsskólastigi (sem gervigreindin hefur aðgang að). Þú ert beðinn um að semja krossapróf úr því námi.
->
-> **Notaðu eingöngu upplýsingar sem koma fram í fyrirliggjandi námsgögnum.**
->
->   - **Lýsing:** Búðu til 10 spurninga fjölvalspróf úr efni þessarar líffræðinámsáætlunar. Spurningarnar eiga að taka mið af þeim hugtökum, staðreyndum og lögmálum sem koma fram í námsefninu.
->   - **Miðað við:** Að spurningarnar séu á framhaldsskólastigi í erfiðleika og orðalagi. Forðastu að spyrja út fyrir efnið sem kennt hefur verið.
->   - **Uppsetning spurninga:** Hver spurning skal vera skýr og afmörkuð. Notaðu jákvæða fullyrðingu eða spurningu. Láttu fylgja fjóra svarmöguleika (a, b, c, d) við hverja spurningu, þar sem einn er réttur en hinir rangir.
->   - **Rangir svarmöguleikar:** Eiga að byggja á algengum miskilningi eða tengjast efninu þannig að ólíklegt sé að nemandi geti giskað rétt nema hafa raunþekkingu.
->   - **Tungumál:** Skrifa skal spurningar og svarmöguleika á íslensku.
->   - **Skil:** Skilaðu spurningunum 10 með númeraðri upplistun og tilheyrandi bókstafsmerktum svarmöguleikum. Í lokin skaltu taka saman stuttan **svarlykil**.
+```
+# ------------------
+# STILLANLEGAR BREYTUR (fylltu út það sem við á)
+# ------------------
 
-### Aðlögun fyrir aðrar greinar/kennslugögn
+# Grunnstillingar (nauðsynlegt)
+**TIMABIL:** [Tilgreindu hvaða kafla, vikur eða tímabil prófið nær yfir.]
+**FJÖLDI SPURNINGA:** [Hér setur þú inn tölu.]
 
-  - **Námsgrein:** Skiptu út tilvísunum í **líffræði** fyrir aðra grein.
-  - **Aðlaga að gögnum:** Nefndu skjölin sem AI hefur aðgang að. Dæmi: `“...hefur aðgang að námsáætlun (Námsáætlun_Saga.pdf) og kennslubók (KennslubókSaga2025.pdf)...”`.
-  - **Efnisafmörkun:** Tilgreindu hvaða hluta efnisins á að prófa úr ef þarf. Dæmi: `“... úr efni 1.–5. kafla kennslubókarinnar ...”`.
-  - **Endurskoðun:** Farðu alltaf yfir útkomuna til að tryggja að spurningar séu innan efnis og svör rétt túlkuð. Fínstilltu *promptið* ef þörf krefur fyrir sérhæft efni.
+# Fínstillingar (valkvætt, en mjög öflugt)
+**NÁMSGREIN:** [Til að fínstilla persónu og tón, t.d. Saga, Líffræði]
+**SKÓLASTIG:** [Til að fínstilla erfiðleikastig, t.d. Framhaldsskólastigi]
+**ÁHERSLUATRIÐI:** [Lykilhugtök eða efnisþætti sem eiga að vera í forgrunni.]
+**GERÐ SPURNINGA:** [Tilgreindu hvers konar spurningar þú vilt, sjá leiðbeiningar hér að ofan.]
+
+# ------------------
+# FÖST SKIPUN (ekki breyta textanum hér fyrir neðan)
+# ------------------
+
+Láttu eins og þú sért sérfróður kennari í **[NÁMSGREIN]** á **[SKÓLASTIG]** (ef tilgreint). Verkefni þitt er að útbúa hágæða krossapróf.
+
+**Notaðu eingöngu þær heimildir sem eru valdar í þessu verkefni.**
+**Spurningarnar skulu einungis ná yfir efni úr [TIMABIL]. Leggðu sérstaka áherslu á [ÁHERSLUATRIÐI], ef þau eru tilgreind.**
+
+- **Verkefnalýsing:** Búðu til **[FJÖLDI SPURNINGA]** fjölvalsspurningar. Mótaðu spurningarnar í samræmi við þá gerð sem er skilgreind í **[GERÐ SPURNINGA]** (ef tilgreint).
+- **Gæðakröfur:** Spurningar skulu vera skýrar, byggja á jákvæðri setningu og prófa raunverulegan skilning. Rangir svarmöguleikar skulu vera trúverðugir og byggja á algengum misskilningi úr námsefninu.
+- **Framsetning og útlit:** Settu prófið upp á læsilegan hátt. Fylgdu þessari uppbyggingu nákvæmlega fyrir hverja spurningu:
+  1. [Texti spurningar]
+     a) [Texti svarmöguleika]
+     b) [Texti svarmöguleika]
+     c) [Texti svarmöguleika]
+     d) [Texti svarmöguleika]
+- **Svarlykill:** Skilaðu ítarlegum svarlykli. Fyrir hverja spurningu skal tilgreina rétt svar (bókstaf), rökstyðja hvers vegna það er rétt og útskýra hvers vegna hinir valmöguleikarnir eru rangir. Byggðu allar útskýringar á völdum heimildum.
+```
