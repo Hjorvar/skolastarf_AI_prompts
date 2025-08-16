@@ -4,19 +4,6 @@
 
 Hér er safn af *prompt*-sniðmátum sem auðvelda kennurum gerð á skýrum og vönduðum matsrömmum (e. *rubrics*). Góður matsrammi er lykiltæki til að tryggja sanngjarnt og gagnsætt námsmat og veita nemendum hagnýta endurgjöf. Sniðmátin henta bæði fyrir almenna spjallgervigreind og sérhæfðari umhverfi eins og Google NotebookLM.
 
-### Aðferðafræði við gerð góðs matsramma
-
-Góður matsrammi einkennist af eftirfarandi þáttum, sem þessi sniðmát eru hönnuð til að styðja við:
-
-  - Skýrir matsþættir: Verkefninu er brotið niður í afmarkaða þætti sem á að meta (t.d. „Innihald“, „Bygging“, „Málfar“).
-  - Afmörkuð hæfnisstig: Skilgreind eru nokkur stig á kvarða sem lýsa ólíkri færni (t.d. „Framúrskarandi“, „Gott“, „Þarfnast úrbóta“).
-  - Lýsandi texti: Hver reitur í matsrammanum inniheldur skýra og hlutlæga lýsingu á því hvað nemandi þarf að sýna til að ná viðkomandi stigi fyrir hvern matsþátt.
-  - Samræmi og sanngirni: Tryggir að allir nemendur séu metnir út frá sömu viðmiðum.
-
-### Um sniðmátin: Greinandi matsrammi
-
-Til eru ýmsar gerðir matsramma. Þessi sniðmát einbeita sér að gerð greinandi matsramma (*analytic rubric*). Þeir eru ítarlegastir og veita bestu endurgjöfina, þar sem hver matsþáttur er metinn sérstaklega.
-
 -----
 
 ## Prompt 1: Sniðmát fyrir almenna gervigreind
