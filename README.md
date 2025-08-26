@@ -7,8 +7,8 @@ Velkomin(n) í skipanasafnið okkar! Hér söfnum við saman hagnýtum fyrirmæl
 
 ## Efnisyfirlit
 ### 📚 Kennsluskipulag og námsmat
-* [Hugmynd að kennsluskipulagi útfrá kennsluáætlun](./prompts/kennsluskipulag/hugmyndirMedKennsluaetlun.md)
-* [Hugmyndir að námsmati útfrá kennsluáætlun](./prompts/namsmat/hugmyndirAdNamsmati.md)
+* [Hugmynd að kennsluskipulagi út frá kennsluáætlun](./prompts/kennsluskipulag/hugmyndirMedKennsluaetlun.md)
+* [Hugmyndir að námsmati út frá kennsluáætlun](./prompts/namsmat/hugmyndirAdNamsmati.md)
 * [Gera Matskvarða (e. rubric)](./prompts/namsmat/rubric.md)
 * [Gera orðalista á mörgum tungumálum](./prompts/kennsluskipulag/ordalistiOlikTungumal.md)
 
