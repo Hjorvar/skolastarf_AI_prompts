@@ -10,6 +10,7 @@ Velkomin(n) í skipanasafnið okkar! Hér söfnum við saman hagnýtum fyrirmæl
 * [Hugmynd að kennsluskipulagi útfrá kennsluáætlun](./prompts/kennsluskipulag/hugmyndirMedKennsluaetlun.md)
 * [Hugmyndir að námsmati útfrá kennsluáætlun](./prompts/namsmat/hugmyndirAdNamsmati.md)
 * [Gera Matskvarða (e. rubric)](./prompts/namsmat/rubric.md)
+* [Gera orðalista á mörgum tungumálum](./prompts/kennsluskipulag/ordalistiOlikTungumal.md)
 
 ### 📚 Námsgrein
 * [Stærðfræði - Leiðbeiningar á ólíkum tungumálum](./prompts/staerdfreadi/leidbeiningarOlikTungumal.md)
