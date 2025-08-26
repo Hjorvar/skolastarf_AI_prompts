@@ -6,6 +6,8 @@ Velkomin(n) í skipanasafnið okkar! Hér söfnum við saman hagnýtum "prompts"
 ---
 
 ## Efnisyfirlit
+### Kennsluskipulag
+* [Hugmynd að kennsluskipulagi útfrá kennsluáætlun](./prompts/kennsluskipulag/hugmyndirMedKennsluaetlun.md)
 
 ### 📚 Eftir námsgrein
 * [Íslenska](./Islenska/README.md)
