@@ -6,7 +6,7 @@ Velkomin(n) í skipanasafnið okkar! Hér söfnum við saman hagnýtum "prompts"
 ---
 
 ## Efnisyfirlit
-### Kennsluskipulag
+### 📚 Kennsluskipulag
 * [Hugmynd að kennsluskipulagi útfrá kennsluáætlun](./prompts/kennsluskipulag/hugmyndirMedKennsluaetlun.md)
 
 ### 📚 Eftir námsgrein
@@ -23,6 +23,6 @@ Velkomin(n) í skipanasafnið okkar! Hér söfnum við saman hagnýtum "prompts"
 * [Krossapróf](./prompts/prof/krossaprof.md)
 
 ### 🛠️ Eftir verkefni
-* [Hugmyndavinna & undirbúningur](./Verkefni/Hugmyndavinna.md)
+* [Fjölbreytar verkefnahugmyndir](./verkefni/fjolbreyttarHugmyndir.md)
 * [Námsmat & endurgjöf](./Verkefni/Namsmat.md)
 * [Samskipti við foreldra](./Verkefni/Samskipti.md)
