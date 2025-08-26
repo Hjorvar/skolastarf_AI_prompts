@@ -1,9 +1,3 @@
-Frábært, ég skil. Það er mun betri nálgun að gera ráð fyrir að kennarar vilji frekar hlaða upp skjali en að afrita og líma texta. Með því að aðlaga leiðbeiningarnar verða promptin aðgengilegri og einfaldari í notkun.
-
-Hér er tillaga að `.md` skjali fyrir GitHub, byggt á þínu dæmi, sem útskýrir notkun á promptunum tveimur til að útbúa kennsluskipulag.
-
------
-
 # Sniðmát fyrir gerð kennsluskipulags
 
 ## Stutt yfirlit
