@@ -21,5 +21,5 @@ Velkomin(n) í skipanasafnið okkar! Hér söfnum við saman hagnýtum fyrirmæl
 * [Krossapróf](./prompts/prof/krossaprof.md)
 
 ### 🛠️ Verkefni
-* [Fjölbreytar verkefnahugmyndir](./verkefni/fjolbreyttarHugmyndir.md)
+* [Fjölbreytar verkefnahugmyndir](./prompts/verkefni/fjolbreyttarHugmyndir.md)
 
