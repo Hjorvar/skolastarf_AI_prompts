@@ -13,7 +13,7 @@ Velkomin(n) í skipanasafnið okkar! Hér söfnum við saman hagnýtum fyrirmæl
 * [Gera orðalista á mörgum tungumálum](./prompts/kennsluskipulag/ordalistiOlikTungumal.md)
 
 ### 📚 Námsgrein
-* [Stærðfræði - Leiðbeiningar á ólíkum tungumálum](./prompts/staerdfreadi/leidbeiningarOlikTungumal.md)
+* [Stærðfræði - Leiðbeiningar á ólíkum tungumálum](./prompts/staerdfraedi/leidbeiningarOlikTungumal.md)
 
 ### 🏫 Skólastig
  
